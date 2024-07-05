@@ -127,12 +127,12 @@ table 60141 "Student Admissions"
             DataClassification = ToBeClassified;
             Caption = 'Admitted By';
         }
-        field(25; "Term/Module"; Text[50])
+        field(25; "Term"; Text[50])
         {
             DataClassification = ToBeClassified;
-            Caption = 'Term/Module';
+            Caption = 'Term';
         }
-        field(26; "Academic Year"; Text[20])
+        field(26; "Academic Year"; Integer)
         {
             DataClassification = ToBeClassified;
             Caption = 'Academic Year';

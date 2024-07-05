@@ -24,7 +24,7 @@ table 60152 "Session Registration"
             DataClassification = ToBeClassified;
             Caption = 'Closing Date';
         }
-        field(5; "Status"; Option)
+        field(5; "Status"; Enum "Student Academic Status")
         {
             DataClassification = ToBeClassified;
             Caption = 'Status';
@@ -34,10 +34,10 @@ table 60152 "Session Registration"
             DataClassification = ToBeClassified;
             Caption = 'Description';
         }
-        field(7; "Approval Status"; Option)
+        field(7; "Application Status"; Enum "Application Status")  
         {
             DataClassification = ToBeClassified;
-            Caption = 'Approval Status';
+            Caption = 'Application Status';
         }
     }
 
