@@ -4,10 +4,10 @@ table 60140 "Student Application"
 
     fields
     {
-        field(1; "No."; Code[20])
+        field(1; "Student No."; Code[20])
         {
             DataClassification = ToBeClassified;
-            Caption = 'No.';
+            Caption = 'Student No.';
         }
         field(2; "First Name"; Text[50])
         {
@@ -126,7 +126,7 @@ table 60140 "Student Application"
 
     keys
     {
-        key(PK; "No.")
+        key(PK; "Student No.")
         {
             Clustered = true;
         }

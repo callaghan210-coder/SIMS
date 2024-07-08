@@ -8,7 +8,7 @@ codeunit 60140 "Student management"
     begin
         // Initialize the new student record
         StudentRecord.Init();
-        StudentRecord."No." := StudentNo;
+        StudentRecord."Student No." := StudentNo;
         StudentRecord."First Name" := FirstName;
         StudentRecord."Surname" := LastName;
         StudentRecord."Date of Birth" := DateOfBirth;
@@ -60,7 +60,8 @@ codeunit 60140 "Student management"
         TotalMarks: Decimal;
     begin
         // Find all marks entries for the student in the specified academic year
-        if MarksEntry.SetRange("No.", StudentNo) and
+        
+        if MarksEntry.SetRange("Student No.", StudentNo) and
            MarksEntry.SetRange("Academic Year", AcademicYear) then begin
             TotalMarks := 0;
             if MarksEntry.FindSet() then
