@@ -47,7 +47,7 @@ codeunit 60140 "Student management"
         EnrollmentRecord."No." := StudentNo;
         EnrollmentRecord."Course" := CourseCode;
         EnrollmentRecord."Academic Year" := AcademicYear;
-        EnrollmentRecord.Term := Term;
+        EnrollmentRecord.Term := Format(Term) ;
 
         // Insert the new enrollment record
         EnrollmentRecord.Insert();

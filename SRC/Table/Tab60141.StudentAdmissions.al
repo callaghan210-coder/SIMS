@@ -112,11 +112,7 @@ table 60141 "Student Admissions"
             DataClassification = ToBeClassified;
             Caption = 'Phone No.';
         }
-        field(22; "Mobile Phone No."; Text[30])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Mobile Phone No.';
-        }
+
         field(23; "Admission Date"; Date)
         {
             DataClassification = ToBeClassified;

@@ -4,12 +4,7 @@ table 60154 "Student Management Setup"
 
     fields
     {
-        field(1; "Primary Key"; Integer)
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Primary Key';
-        }
-        field(2; "Student No."; Code[20])
+        field(1; "No."; Code[20])
         {
             DataClassification = ToBeClassified;
             Caption = 'Student No.';
@@ -29,16 +24,12 @@ table 60154 "Student Management Setup"
             DataClassification = ToBeClassified;
             Caption = 'Default Student Posting Group';
         }
-        field(6; "Maximum National ID"; Text[50])
+        field(6; "National ID"; Text[50])
         {
             DataClassification = ToBeClassified;
             Caption = 'Maximum National ID';
         }
-        field(7; "Minimum National ID"; Text[50])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Minimum National ID';
-        }
+
         field(8; "Default Country Code"; Code[10])
         {
             DataClassification = ToBeClassified;
@@ -48,7 +39,7 @@ table 60154 "Student Management Setup"
 
     keys
     {
-        key(PK; "Primary Key")
+        key(PK; "No.")
         {
             Clustered = true;
         }
