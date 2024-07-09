@@ -10,7 +10,7 @@ page 60140 "Student Application "
         {
             repeater(General)
             {
-                field("No."; Rec."No.")
+                field("Student No."; Rec."Student No.")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the No. field.', Comment = '%';

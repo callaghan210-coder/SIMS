@@ -163,7 +163,7 @@ table 60153 "Marks Entry"
 
     keys
     {
-        key(PK; "Entry No.")
+        key(PK; "Student No.")
         {
             Clustered = true;
         }
