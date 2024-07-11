@@ -47,7 +47,7 @@ codeunit 60140 "Student management"
         EnrollmentRecord."No." := StudentNo;
         EnrollmentRecord."Course" := CourseCode;
         EnrollmentRecord."Academic Year" := AcademicYear;
-        EnrollmentRecord.Term := Format(Term) ;
+        EnrollmentRecord.Term := Format(Term);
 
         // Insert the new enrollment record
         EnrollmentRecord.Insert();
@@ -60,20 +60,20 @@ codeunit 60140 "Student management"
         TotalMarks: Decimal;
     begin
         // Find all marks entries for the student in the specified academic year
-        
-        if MarksEntry.SetRange("Student No.", StudentNo) and
-           MarksEntry.SetRange("Academic Year", AcademicYear) then begin
-            TotalMarks := 0;
-            if MarksEntry.FindSet() then
-                repeat
-                    // Sum the total marks
-                    TotalMarks += MarksEntry."Total Marks";
-                until MarksEntry.Next() = 0;
+        TotalMarks := 0;
+        MarksEntry.Reset();
+        MarksEntry.SetRange("Student No.", StudentNo);
+        MarksEntry.SetRange("Academic Year", AcademicYear);
+        if MarksEntry.FindSet() then
+            repeat
+                // Sum the total marks
+                TotalMarks += MarksEntry."Total Marks";
+            until MarksEntry.Next() = 0;
 
-            // Display the total marks (or you could store this in a field)
-            Message('Total Marks for Student No. %1 in Academic Year %2: %3', StudentNo, AcademicYear, TotalMarks);
-        end else
-            Error('No marks entries found for Student No. %1 in Academic Year %2.', StudentNo, AcademicYear);
+        // Display the total marks (or you could store this in a field)
+        Message('Total Marks for Student No. %1 in Academic Year %2: %3', StudentNo, AcademicYear, TotalMarks);
+        // else
+        // Error('No marks entries found for Student No. %1 in Academic Year %2.', StudentNo, AcademicYear);
     end;
 }
 

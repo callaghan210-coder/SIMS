@@ -125,6 +125,12 @@ page 60140 "Student Application "
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Approval Status field.', Comment = '%';
                 }
+                field("Student Academic Status"; Rec."Student Academic Status")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Student academic Status field.', Comment = '%';
+                }
+                
             }
         }
     }

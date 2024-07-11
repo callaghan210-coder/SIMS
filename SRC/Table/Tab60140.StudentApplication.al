@@ -122,6 +122,11 @@ table 60140 "Student Application"
             DataClassification = ToBeClassified;
             Caption = 'E-Mail';
         }
+        field(24; "Student Academic Status"; Enum "Student Academic Status")
+        {
+            DataClassification = ToBeClassified;
+            caption = 'Student Academic Status';
+        }
     }
 
     keys
