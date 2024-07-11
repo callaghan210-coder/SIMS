@@ -22,5 +22,29 @@ enum 60144 "Student Academic Status"
     {
         Caption = 'Awaiting Admission';
     }
+    value(5; Alumni)
+    {
+        Caption = 'Alumni';
+    }
+    value(6; Certificate)
+    {
+        Caption = 'Certificate';
+    }
+    value(7; Degree)
+    {
+        Caption = 'Degree';
+    }
+    value(8; Master)
+    {
+        Caption = 'Master';
+    }
+    value(9; PhD)
+    {
+        Caption = 'PhD';
+    }
 }
+
+
+
+
 
