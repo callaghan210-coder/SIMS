@@ -1,4 +1,4 @@
-page 60140 "Student Application "
+page 60140 "Student Application"
 {
     Caption = 'Student Application ';
     PageType = List;
