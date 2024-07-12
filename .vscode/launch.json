@@ -11,7 +11,7 @@
             "port": 3039,
             "schemaUpdateMode":"ForceSync",
             "authentication": "Windows",
-            "startupObjectId": 60156,
+            "startupObjectId": 60164,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
