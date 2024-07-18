@@ -45,11 +45,10 @@ table 60140 "Student Application"
             Caption = 'Customer Type';
             OptionMembers = "Individual","Company";
         }
-        field(9; "Gender"; Option)
+        field(9; "Gender"; Enum Gender)
         {
             DataClassification = ToBeClassified;
             Caption = 'Gender';
-            OptionMembers = "Male","Female","Other";
         }
         field(10; "Date of Birth"; Date)
         {

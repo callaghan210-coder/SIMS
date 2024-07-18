@@ -12,6 +12,10 @@ page 60164 "SIMS RoleCenter"
             {
                 ApplicationArea = Basic, Suite;
             }
+            part("Student Management Cue"; "Student Management Cue")
+            {
+                ApplicationArea = Basic, Suite;
+            }
 
 
         }
@@ -253,5 +257,4 @@ page 60164 "SIMS RoleCenter"
 
 
 
-   
-   
+
